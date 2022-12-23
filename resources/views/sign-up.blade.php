@@ -100,52 +100,43 @@
                                 <div class="card-body p-5">
                                     <h3 class="text-uppercase text-center mb-5">Create an account</h3>
 
-                                    <form>
-
+                                    <form action="" method="POST">
+                                        @csrf()
                                         <div class="form-outline mb-4">
                                             <label class="form-label fw-bold" for="form3Example1cg">Your Name</label>
                                             <input type="text" id="form3Example1cg"
-                                                class="form-control form-control-lg" />
+                                                class="form-control form-control-lg" name="name" />
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label fw-bold" for="form3Example3cg">Your Email</label>
                                             <input type="email" id="form3Example3cg"
-                                                class="form-control form-control-lg" />
+                                                class="form-control form-control-lg" name="email"/>
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label fw-bold" for="form3Example4cg">Password</label>
                                             <input type="password" id="form3Example4cg"
-                                                class="form-control form-control-lg" />
+                                                class="form-control form-control-lg" name="password"/>
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label fw-bold" for="form3Example4cdg">Repeat your
                                                 password</label>
                                             <input type="password" id="form3Example4cdg"
-                                                class="form-control form-control-lg" />
-                                        </div>
-
-                                        <div class="form-check d-flex justify-content-center mb-5">
-                                            <input class="form-check-input me-2" type="checkbox" value=""
-                                                id="form2Example3cg" />
-                                            <label class="form-check-label fw-bold text-black-50" for="form2Example3g">
-                                                I agree all statements in <a href="#!" class="text-body"><u>Terms of
-                                                        service</u></a>
-                                            </label>
+                                                class="form-control form-control-lg" name="confirmPassword"/>
                                         </div>
 
                                         <div class="d-flex justify-content-center">
-                                            <button type="button"
+                                            <button type="submit"
                                                 class="btn btn-lg fw-bold gradient-custom-4 text-body">Register</button>
                                         </div>
 
                                         <p class="text-center text-muted fw-bold text-black-50 mt-5 mb-0">Have already an account? <a
-                                                href="sign-in.html" class="fw-bold text-body"><u>Login here</u></a></p>
+                                                href="/sign-in" class="fw-bold text-body"><u>Login here</u></a></p>
 
                                     </form>
-
+                                        <p>dd({{$information->name}})</p>
                                 </div>
                             </div>
                         </div>

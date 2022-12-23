@@ -57,8 +57,8 @@
           </div>
           <div class="offcanvas-body">
             <div class="d-flex order-2">
-              <button class="btn mx-3 border-0" type="button" onclick="window.location.href='sign-in.html'">Sign in</button>
-              <button class="btn sign text-white" onclick="window.location.href='sign-up.html'" type="button">
+              <button class="btn mx-3 border-0" type="button" onclick="window.location.href='/sign-in'">Sign in</button>
+              <button class="btn sign text-white" onclick="window.location.href='/sign-up'" type="button">
                 Sign up
               </button>
             </div>
@@ -88,7 +88,7 @@
       </div>
     </nav>
   </header>
-  
+
   <div id="home-page">
     <section class="banner position-relative">
       <div class="swiper mySwiper">
@@ -559,10 +559,11 @@
 
       </div>
     </div>
-  </footer>
-  <div class="text-center sub-footer bg-dark text-white">
+    <div class="text-center sub-footer bg-dark text-white">
     Copyright 2022
   </div>
+  </footer>
+
 
   <!-- Initialize Swiper/Datepicker -->
   <script type="text/javascript">
