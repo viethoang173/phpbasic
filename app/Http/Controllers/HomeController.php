@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\account;
+use Illuminate\Http\Request;
+use Illuminate\Console\View\Components\Info;
+
 class HomeController extends Controller
 {
     function welcome(){
@@ -31,16 +35,16 @@ class HomeController extends Controller
     function signUp(){
         return view('sign-up');
     }
-    //dang ki tai khoan
-    function resgiter(Resquest $request){
-        $information = new information();
-        $information -> name = $request -> input('name');
-        $information -> save();
-
-    }
-
-
     function submitBooking(){
         return view('submit-booking');
+    }
+
+    //dang ki tai khoan
+    function info(Request $request){
+        $info = new account();
+        $info->name = $request->input('name');
+        $info->email = $request->input('email');
+        $info->password = $request->input('password');
+        $info->save();
     }
 }

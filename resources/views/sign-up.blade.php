@@ -100,7 +100,7 @@
                                 <div class="card-body p-5">
                                     <h3 class="text-uppercase text-center mb-5">Create an account</h3>
 
-                                    <form action="" method="POST">
+                                    <form action="/test" method="get">
                                         @csrf()
                                         <div class="form-outline mb-4">
                                             <label class="form-label fw-bold" for="form3Example1cg">Your Name</label>
@@ -120,13 +120,6 @@
                                                 class="form-control form-control-lg" name="password"/>
                                         </div>
 
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label fw-bold" for="form3Example4cdg">Repeat your
-                                                password</label>
-                                            <input type="password" id="form3Example4cdg"
-                                                class="form-control form-control-lg" name="confirmPassword"/>
-                                        </div>
-
                                         <div class="d-flex justify-content-center">
                                             <button type="submit"
                                                 class="btn btn-lg fw-bold gradient-custom-4 text-body">Register</button>
@@ -136,7 +129,6 @@
                                                 href="/sign-in" class="fw-bold text-body"><u>Login here</u></a></p>
 
                                     </form>
-                                        <p>dd({{$information->name}})</p>
                                 </div>
                             </div>
                         </div>

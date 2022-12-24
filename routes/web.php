@@ -22,3 +22,5 @@ Route::get('/select-booking',[\App\Http\Controllers\HomeController::class, 'sele
 Route::get('/sign-in',[\App\Http\Controllers\HomeController::class, 'signIn']);
 Route::get('/sign-up',[\App\Http\Controllers\HomeController::class, 'signUp']);
 Route::get('/submit-booking',[\App\Http\Controllers\HomeController::class, 'submitBooking']);
+
+Route::get('/test',[\App\Http\Controllers\HomeController::class, 'info']);
